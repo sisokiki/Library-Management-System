@@ -1,29 +1,41 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+### IDE Settings (Ignored) ###
+# IntelliJ
+.idea/
+*.iml
+/out/
 
-### Eclipse ###
-.apt_generated
+# Eclipse
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.settings/
+.factorypath
+/bin/
 
-### NetBeans ###
-/nbproject/private/
+# NetBeans
+/nbproject/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
+### Operating System ###
 .DS_Store
+Thumbs.db
+
+### Compiled Code (Ignored) ###
+*.class
+
+### Build Artifacts (Ignored) ###
+target/
+*.jar
+*.war
+*.ear
+
+### EXCEPTION: Ensure Source Code is NEVER Ignored ###
+# This forces git to look inside src even if rules above conflict
+!src/
+!*.java
