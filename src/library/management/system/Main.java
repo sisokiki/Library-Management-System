@@ -53,6 +53,8 @@ public class Main extends JFrame implements ActionListener {
 
             addMenuItem(maintenance, "Add New Book");
             addMenuItem(maintenance, "Add New Member");
+            addMenuItem(maintenance, "Update Book Details");
+            addMenuItem(maintenance, "Update Member Details");
         }
 
         // === MENU 2: TRANSACTIONS ===
@@ -98,6 +100,8 @@ public class Main extends JFrame implements ActionListener {
         }
         else if (msg.equals("Add New Book")) openFrame(new AddBook());
         else if (msg.equals("Add New Member")) openFrame(new AddMember());
+        else if (msg.equals("Update Book Details")) openFrame(new UpdateBook());
+        else if (msg.equals("Update Member Details")) openFrame(new UpdateMember());
         else if (msg.equals("Issue Book")) openFrame(new BookIssue());
         else if (msg.equals("Return Book")) openFrame(new ReturnBook());
         else if (msg.equals("Pay Fine")) openFrame(new PayFine());
